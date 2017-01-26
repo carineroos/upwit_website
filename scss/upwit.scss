@@ -1,3 +1,4 @@
+$brand-color: #b4ebed;
 $line-height: 1.8em;
 
 //breakpoints
@@ -121,7 +122,7 @@ nav ul {
 	}
 
 	.nav-links {
-		background: #b4ebed;
+		background: $brand-color;
 		display: none;
 
 		a {
@@ -149,9 +150,28 @@ nav ul {
 		border: none;
 		padding-top: 20px;
 	}
+
+	.inscricoes {
+		background: $brand-color;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		text-decoration: none;
+		padding: 20px 0;
+		border-radius: 5px;
+		font-size: 2em;
+		color: #666;
+		text-shadow: 0 1px 1px #fff;
+
+		&:hover,
+		&:active {
+			background: #f0a303;
+		}
+	}
 }
 
 .banner {
+	min-height: 310px;
 	position: relative;
 
 	figcaption {
