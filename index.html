@@ -2,13 +2,22 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/upwit.css">
 	<title>UPWIT - Unlocking the Power of Women in Technology</title>
 </head>
 <body>
-	<header>
-		<h1><a href="#">UPWIT - Unlocking the Power of Women in Technology</a></h1>
-		<nav>
-			<ul>
+	<header class="header-nav">
+		<h1 lang="en"><a href="#">UPWIT - Unlocking the Power of Women in Technology</a></h1>
+		<nav class="hidden-lg">
+			<button title="menu" class="nav-btn">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+			<ul class="nav-links" lang="en">
 				<li><a href="#the-movement">The Movement</a></li>
 				<li><a href="#data">Data</a></li>
 				<li><a href="#about-us">About Us</a></li>
@@ -16,11 +25,18 @@
 			</ul>
 		</nav>
 	</header>
-	<article>
-		<h2>Próximo evento: <span lang="en">cities for everyone</span></h2>
-		<img src="img/banners/citiesforeveryone_home_1200.png" alt="Cities for Everyone. Sábado 11 de fevereiro">
+	<article id="featured">
+		<h2><span lang="en"><a href="smart-cities.html">Cities for everyone</a></span></h2>
+		<figure class="banner">
+			<a href="smart-cities.html"><img src="img/banners/citiesforeveryone_home_1200.jpg" alt="Cities for Everyone. Sábado 11 de fevereiro"></a>
+			<figcaption>
+				Dia 11 de fevereiro, sábado, das 14h às 19h. <br>
+				Red Bull Station. <br>
+				Praça da Bandeira, 137
+			</figcaption>
+			<button class="pause"></button>
+		</figure>
 	</article>
-	article
 	<article id="the-movement">
 		<section lang="en">
 			<h2>The Movement</h2>
@@ -93,6 +109,7 @@
 	</article>
 
 	<article id="about-us">
+		<img src="img/Carine_Roos_Social_Entrepreneur_upwit.jpg" alt="Carine Roos Social Entrepreneur" class="hidden-xs">
 		<section lang="en">
 			<h2>About Us</h2>
 
@@ -121,6 +138,6 @@
 		</ul>
 
 	</article>
-
+<script type="text/javascript" src="js/upwit.js"></script>
 </body>
 </html>
