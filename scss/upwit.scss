@@ -104,12 +104,13 @@ nav ul {
 	}
 
 	button {
-		border: none;
 		background: none;
-		width: 40px;
-		position: absolute;
-		top: 18px;
+		border: none;
 		left: 15px;
+		padding: 6px 0;
+		position: absolute;
+		top: 15px;
+		width: 40px;
 
 		.bar {
 			background: #999;

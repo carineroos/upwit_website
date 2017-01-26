@@ -110,61 +110,62 @@ nav ul a {
 }
 /* line 106, ../scss/upwit.scss */
 .header-nav button {
-  border: none;
   background: none;
-  width: 40px;
-  position: absolute;
-  top: 18px;
+  border: none;
   left: 15px;
+  padding: 6px 0;
+  position: absolute;
+  top: 15px;
+  width: 40px;
 }
-/* line 114, ../scss/upwit.scss */
+/* line 115, ../scss/upwit.scss */
 .header-nav button .bar {
   background: #999;
   height: 5px;
   margin: 3px 5px;
   display: block;
 }
-/* line 122, ../scss/upwit.scss */
+/* line 123, ../scss/upwit.scss */
 .header-nav .nav-links {
   background: #b4ebed;
   display: none;
 }
-/* line 126, ../scss/upwit.scss */
+/* line 127, ../scss/upwit.scss */
 .header-nav .nav-links a {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 }
-/* line 132, ../scss/upwit.scss */
+/* line 133, ../scss/upwit.scss */
 .header-nav .nav-links li:last-child a {
   border-bottom: none;
 }
 
-/* line 140, ../scss/upwit.scss */
+/* line 141, ../scss/upwit.scss */
 #featured {
   height: calc(100% - 60px);
 }
-/* line 143, ../scss/upwit.scss */
+/* line 144, ../scss/upwit.scss */
 #featured a {
   display: block;
 }
-/* line 147, ../scss/upwit.scss */
+/* line 148, ../scss/upwit.scss */
 #featured h2 {
   border: none;
   padding-top: 20px;
 }
 
-/* line 153, ../scss/upwit.scss */
+/* line 154, ../scss/upwit.scss */
 .banner {
   position: relative;
 }
-/* line 156, ../scss/upwit.scss */
+/* line 157, ../scss/upwit.scss */
 .banner figcaption {
   color: #666;
   line-height: 1.5em;
   padding: 20px;
 }
-/* line 163, ../scss/upwit.scss */
+/* line 164, ../scss/upwit.scss */
 .banner button {
   background: none;
   border: 0;
@@ -176,7 +177,7 @@ nav ul a {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-/* line 175, ../scss/upwit.scss */
+/* line 176, ../scss/upwit.scss */
 .banner .pause,
 .banner .play {
   display: block;
@@ -184,14 +185,14 @@ nav ul a {
   right: 15px;
   top: 15px;
 }
-/* line 183, ../scss/upwit.scss */
+/* line 184, ../scss/upwit.scss */
 .banner .pause {
   border-left: 10px solid #333;
   border-right: 10px solid #333;
   height: 30px;
   width: 30px;
 }
-/* line 190, ../scss/upwit.scss */
+/* line 191, ../scss/upwit.scss */
 .banner .play {
   border-left: 25px solid #333;
   border-bottom: 15px solid transparent;
