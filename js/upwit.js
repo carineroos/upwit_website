@@ -33,3 +33,28 @@ botaoMenu.onclick = function(){
 		navLinks.style.display = 'block';
 	}
 }
+
+
+var btn_traduzir = document.querySelectorAll('.btn-traduzir');
+
+for (var i = 0; i < btn_traduzir.length; i++) {
+
+  	btn_traduzir[i].addEventListener("click", function() {
+
+		var container = document.querySelector("#"+this.parentElement.id),
+			textoPortugues = container.querySelector('section'),
+			textoIngles = container.querySelector('[lang=en]');
+
+  		if(this.textContent == "English"){
+			textoPortugues.style.display = 'none';
+			textoIngles.style.display = 'block';
+			this.textContent = "Português";
+  		} else {
+  			textoPortugues.style.display = 'block';
+			textoIngles.style.display = 'none';
+			this.textContent = "English";
+  		}
+
+  });
+
+}

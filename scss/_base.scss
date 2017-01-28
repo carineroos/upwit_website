@@ -1,0 +1,101 @@
+//reset
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+//estilos em tags
+
+html,
+body {
+	color: #000;
+	font-family: 'PT Sans', sans-serif;
+	height: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+article {
+	background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(153,153,153,1) 99%);
+	min-height: 100%;
+}
+
+h1, h2, h3 {
+	font-family: 'Arsenal', sans-serif;
+}
+
+h2 {
+	border-bottom: 1px solid #999;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h3 {
+	padding: 20px 20px 0;
+}
+
+p {
+	line-height: $line-height;
+	padding: 20px;
+	text-align: justify;
+	text-indent: 10px;
+}
+
+p + p {
+	padding-top: 0;
+}
+
+
+:not(nav) > ul, ol {
+	margin: 0 20px 0 40px;
+
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+nav ul {
+	@extends .no-bullet;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+section[lang=en] {
+	display: none;
+}
+
+//classes utilitarias
+
+.hidden-xs {
+	@media ($xs){
+		display: none;
+	}
+}
+
+.hidden-lg {
+	@media ($lg){
+		display: none;
+	}
+}
+
+.no-bullet {
+	list-style: none;
+}
+
+
+
+

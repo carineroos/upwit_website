@@ -1,11 +1,11 @@
-/* line 11, ../scss/upwit.scss */
+/* line 3, ../scss/_base.scss */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 17, ../scss/upwit.scss */
+/* line 11, ../scss/_base.scss */
 html,
 body {
   color: #000;
@@ -13,93 +13,104 @@ body {
   height: 100%;
 }
 
-/* line 24, ../scss/upwit.scss */
+/* line 18, ../scss/_base.scss */
 a {
   color: inherit;
 }
 
-/* line 28, ../scss/upwit.scss */
+/* line 22, ../scss/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 32, ../scss/upwit.scss */
+/* line 26, ../scss/_base.scss */
 article {
   background: linear-gradient(to bottom, #eeeeee 0%, #999999 99%);
   min-height: 100%;
 }
 
-/* line 37, ../scss/upwit.scss */
+/* line 31, ../scss/_base.scss */
 h1, h2, h3 {
   font-family: 'Arsenal', sans-serif;
 }
 
-/* line 41, ../scss/upwit.scss */
+/* line 35, ../scss/_base.scss */
 h2 {
   border-bottom: 1px solid #999;
   margin-bottom: 10px;
   padding: 10px 20px;
 }
-/* line 47, ../scss/upwit.scss */
+/* line 40, ../scss/_base.scss */
 h2 a {
   text-decoration: none;
 }
 
-/* line 52, ../scss/upwit.scss */
+/* line 45, ../scss/_base.scss */
 h3 {
   padding: 20px 20px 0;
 }
 
-/* line 56, ../scss/upwit.scss */
+/* line 49, ../scss/_base.scss */
 p {
-  padding: 20px;
-  text-indent: 10px;
   line-height: 1.8em;
+  padding: 20px;
+  text-align: justify;
+  text-indent: 10px;
 }
 
-/* line 62, ../scss/upwit.scss */
+/* line 56, ../scss/_base.scss */
 p + p {
   padding-top: 0;
 }
 
-/* line 66, ../scss/upwit.scss */
+/* line 61, ../scss/_base.scss */
 :not(nav) > ul, ol {
   margin: 0 20px 0 40px;
 }
-/* line 69, ../scss/upwit.scss */
+/* line 64, ../scss/_base.scss */
 :not(nav) > ul li, ol li {
   margin-bottom: 10px;
 }
 
-/* line 74, ../scss/upwit.scss */
+/* line 69, ../scss/_base.scss */
 nav ul {
-  list-style: none;
+  @extends .no-bullet;
 }
-/* line 77, ../scss/upwit.scss */
+/* line 72, ../scss/_base.scss */
 nav ul a {
   text-decoration: none;
 }
 
+/* line 77, ../scss/_base.scss */
+section[lang=en] {
+  display: none;
+}
+
 @media (max-width: 480px) {
-  /* line 82, ../scss/upwit.scss */
+  /* line 83, ../scss/_base.scss */
   .hidden-xs {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 88, ../scss/upwit.scss */
+  /* line 89, ../scss/_base.scss */
   .hidden-lg {
     display: none;
   }
 }
 
-/* line 94, ../scss/upwit.scss */
+/* line 95, ../scss/_base.scss */
+.no-bullet {
+  list-style: none;
+}
+
+/* line 1, ../scss/_home.scss */
 .header-nav {
   padding-top: 5px;
   position: relative;
 }
-/* line 98, ../scss/upwit.scss */
+/* line 5, ../scss/_home.scss */
 .header-nav h1 a {
   background: url(../img/upwit-logo.svg) no-repeat;
   background-size: auto 100%;
@@ -108,7 +119,7 @@ nav ul a {
   height: 60px;
   text-indent: -999em;
 }
-/* line 107, ../scss/upwit.scss */
+/* line 14, ../scss/_home.scss */
 .header-nav button {
   background: none;
   border: none;
@@ -118,43 +129,43 @@ nav ul a {
   top: 15px;
   width: 40px;
 }
-/* line 116, ../scss/upwit.scss */
+/* line 23, ../scss/_home.scss */
 .header-nav button .bar {
   background: #999;
   height: 5px;
   margin: 3px 5px;
   display: block;
 }
-/* line 124, ../scss/upwit.scss */
+/* line 31, ../scss/_home.scss */
 .header-nav .nav-links {
   background: #b4ebed;
   display: none;
 }
-/* line 128, ../scss/upwit.scss */
+/* line 35, ../scss/_home.scss */
 .header-nav .nav-links a {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 }
-/* line 134, ../scss/upwit.scss */
+/* line 41, ../scss/_home.scss */
 .header-nav .nav-links li:last-child a {
   border-bottom: none;
 }
 
-/* line 142, ../scss/upwit.scss */
+/* line 49, ../scss/_home.scss */
 #featured {
   height: calc(100% - 60px);
 }
-/* line 145, ../scss/upwit.scss */
+/* line 52, ../scss/_home.scss */
 #featured a {
   display: block;
 }
-/* line 149, ../scss/upwit.scss */
+/* line 56, ../scss/_home.scss */
 #featured h2 {
   border: none;
   padding-top: 20px;
 }
-/* line 154, ../scss/upwit.scss */
+/* line 61, ../scss/_home.scss */
 #featured .inscricoes {
   background: #b4ebed;
   width: 80%;
@@ -167,23 +178,23 @@ nav ul a {
   color: #666;
   text-shadow: 0 1px 1px #fff;
 }
-/* line 166, ../scss/upwit.scss */
+/* line 73, ../scss/_home.scss */
 #featured .inscricoes:hover, #featured .inscricoes:active {
   background: #f0a303;
 }
 
-/* line 173, ../scss/upwit.scss */
+/* line 80, ../scss/_home.scss */
 .banner {
   min-height: 310px;
   position: relative;
 }
-/* line 177, ../scss/upwit.scss */
+/* line 84, ../scss/_home.scss */
 .banner figcaption {
   color: #666;
   line-height: 1.5em;
   padding: 20px;
 }
-/* line 184, ../scss/upwit.scss */
+/* line 91, ../scss/_home.scss */
 .banner button {
   background: none;
   border: 0;
@@ -195,7 +206,7 @@ nav ul a {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-/* line 196, ../scss/upwit.scss */
+/* line 103, ../scss/_home.scss */
 .banner .pause,
 .banner .play {
   display: block;
@@ -203,16 +214,31 @@ nav ul a {
   right: 15px;
   top: 15px;
 }
-/* line 204, ../scss/upwit.scss */
+/* line 111, ../scss/_home.scss */
 .banner .pause {
   border-left: 10px solid #333;
   border-right: 10px solid #333;
   height: 30px;
   width: 30px;
 }
-/* line 211, ../scss/upwit.scss */
+/* line 118, ../scss/_home.scss */
 .banner .play {
   border-left: 25px solid #333;
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
+}
+
+/* line 125, ../scss/_home.scss */
+#home h2 {
+  margin-bottom: 0;
+}
+
+/* line 129, ../scss/_home.scss */
+.btn-traduzir {
+  border: 0;
+  background: none;
+  display: block;
+  margin-left: auto;
+  margin-bottom: -20px;
+  padding: 10px 15px;
 }
