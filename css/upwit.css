@@ -242,3 +242,22 @@ section[lang=en] {
   margin-bottom: -20px;
   padding: 10px 15px;
 }
+
+/* line 142, ../scss/_home.scss */
+#last-editions h2 {
+  margin-bottom: 20px;
+}
+/* line 146, ../scss/_home.scss */
+#last-editions h3 {
+  padding: 0;
+  text-align: center;
+}
+/* line 150, ../scss/_home.scss */
+#last-editions h3 a {
+  text-decoration: none;
+}
+/* line 152, ../scss/_home.scss */
+#last-editions h3 img {
+  display: block;
+  margin: 20px auto;
+}
