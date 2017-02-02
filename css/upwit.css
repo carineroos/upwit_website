@@ -13,43 +13,68 @@ body {
   height: 100%;
 }
 
-/* line 18, ../scss/_base.scss */
+@media (min-width: 992px) {
+  /* line 18, ../scss/_base.scss */
+  body {
+    background: black;
+    color: white;
+    padding-left: 245px;
+    max-width: 1200px;
+  }
+}
+
+/* line 27, ../scss/_base.scss */
 a {
   color: inherit;
 }
 
-/* line 22, ../scss/_base.scss */
+/* line 31, ../scss/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 26, ../scss/_base.scss */
+/* line 35, ../scss/_base.scss */
 article {
   background: linear-gradient(135deg, #eeeeee 0%, #cccccc 100%);
 }
+@media (min-width: 992px) {
+  /* line 35, ../scss/_base.scss */
+  article {
+    background: none;
+    min-height: 100%;
+  }
+}
 
-/* line 32, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 h1, h2, h3 {
   font-family: 'Arsenal', sans-serif;
 }
 
-/* line 36, ../scss/_base.scss */
+/* line 48, ../scss/_base.scss */
 h2 {
   border-bottom: 1px solid #999;
   margin-bottom: 10px;
   padding: 10px 20px;
 }
-/* line 41, ../scss/_base.scss */
+/* line 53, ../scss/_base.scss */
 h2 a {
   text-decoration: none;
 }
+@media (min-width: 992px) {
+  /* line 48, ../scss/_base.scss */
+  h2 {
+    border-bottom: none;
+    font-size: 4em;
+    padding: 1em 1.5em .5em;
+  }
+}
 
-/* line 46, ../scss/_base.scss */
+/* line 65, ../scss/_base.scss */
 h3 {
   padding: 20px 20px 0;
 }
 
-/* line 50, ../scss/_base.scss */
+/* line 69, ../scss/_base.scss */
 p {
   line-height: 1.8em;
   padding: 20px;
@@ -57,57 +82,63 @@ p {
   text-indent: 10px;
 }
 
-/* line 57, ../scss/_base.scss */
+/* line 76, ../scss/_base.scss */
 p + p {
   padding-top: 0;
 }
 
-/* line 62, ../scss/_base.scss */
+/* line 81, ../scss/_base.scss */
 :not(nav) > ul, ol {
   margin: 0 20px 0 40px;
 }
-/* line 65, ../scss/_base.scss */
+/* line 84, ../scss/_base.scss */
 :not(nav) > ul li, ol li {
   padding-bottom: 10px;
 }
 
-/* line 70, ../scss/_base.scss */
+/* line 89, ../scss/_base.scss */
 nav ul {
   @extends .no-bullet;
 }
-/* line 73, ../scss/_base.scss */
+/* line 92, ../scss/_base.scss */
 nav ul a {
   text-decoration: none;
 }
 
-/* line 78, ../scss/_base.scss */
+/* line 97, ../scss/_base.scss */
 section[lang=en] {
   display: none;
 }
 
-/* line 82, ../scss/_base.scss */
+/* line 101, ../scss/_base.scss */
 footer {
   background: #333;
   color: #fff;
   padding: 5px;
   text-align: center;
 }
+@media (min-width: 992px) {
+  /* line 101, ../scss/_base.scss */
+  footer {
+    background: black;
+  }
+}
 
 @media (max-width: 480px) {
-  /* line 91, ../scss/_base.scss */
+  /* line 114, ../scss/_base.scss */
   .hidden-xs {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 97, ../scss/_base.scss */
+  /* line 120, ../scss/_base.scss */
   .hidden-lg {
     display: none;
   }
 }
 
-/* line 103, ../scss/_base.scss */
+/* line 126, ../scss/_base.scss */
 .no-bullet {
   list-style: none;
 }
@@ -117,7 +148,19 @@ footer {
   padding-top: 5px;
   position: relative;
 }
-/* line 5, ../scss/_home.scss */
+@media (min-width: 992px) {
+  /* line 1, ../scss/_home.scss */
+  .header-nav {
+    background: white;
+    height: 100%;
+    left: 0;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    width: 245px;
+  }
+}
+/* line 15, ../scss/_home.scss */
 .header-nav h1 a {
   background: url(../img/upwit-logo.svg) no-repeat;
   background-size: auto 100%;
@@ -126,7 +169,13 @@ footer {
   height: 60px;
   text-indent: -999em;
 }
-/* line 14, ../scss/_home.scss */
+@media (min-width: 992px) {
+  /* line 15, ../scss/_home.scss */
+  .header-nav h1 a {
+    margin: 40px 0;
+  }
+}
+/* line 28, ../scss/_home.scss */
 .header-nav button {
   background: none;
   border: none;
@@ -136,18 +185,18 @@ footer {
   top: 15px;
   width: 40px;
 }
-/* line 23, ../scss/_home.scss */
+/* line 37, ../scss/_home.scss */
 .header-nav button:focus {
   outline-color: #b4ebed;
 }
-/* line 27, ../scss/_home.scss */
+/* line 41, ../scss/_home.scss */
 .header-nav button .bar {
   background: #999;
   height: 5px;
   margin: 3px 5px;
   display: block;
 }
-/* line 35, ../scss/_home.scss */
+/* line 49, ../scss/_home.scss */
 .header-nav .nav-links {
   background: #b4ebed;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -158,45 +207,81 @@ footer {
   width: 100%;
   z-index: 1;
 }
-/* line 45, ../scss/_home.scss */
+@media (min-width: 992px) {
+  /* line 49, ../scss/_home.scss */
+  .header-nav .nav-links {
+    background: none;
+    box-shadow: none;
+    display: block;
+    position: static;
+  }
+}
+/* line 66, ../scss/_home.scss */
 .header-nav .nav-links a {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 }
-/* line 51, ../scss/_home.scss */
+@media (min-width: 992px) {
+  /* line 66, ../scss/_home.scss */
+  .header-nav .nav-links a {
+    color: #666;
+    border-bottom: none;
+    padding: 15px 20px 15px 40px;
+    transition: 1s;
+  }
+  /* line 77, ../scss/_home.scss */
+  .header-nav .nav-links a:active, .header-nav .nav-links a:hover {
+    background-color: #b4ebed;
+    color: black;
+    transition: 1s;
+  }
+}
+/* line 86, ../scss/_home.scss */
 .header-nav .nav-links li:last-child a {
   border-bottom: none;
 }
 
-/* line 59, ../scss/_home.scss */
+/* line 94, ../scss/_home.scss */
 #featured {
-  height: calc(100% - 60px);
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 20px;
+  -webkit-align-items: center;
   align-items: center;
+  display: flex;
+  height: calc(100% - 60px);
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding-bottom: 20px;
 }
-/* line 67, ../scss/_home.scss */
+@media (min-width: 992px) {
+  /* line 94, ../scss/_home.scss */
+  #featured {
+    background: black url(../img/rodape_sobre_upwit.gif) no-repeat;
+    background-position: center 90%;
+    background-size: 44%;
+    display: block;
+    min-height: 990px;
+  }
+}
+/* line 111, ../scss/_home.scss */
 #featured a {
   display: block;
 }
-/* line 71, ../scss/_home.scss */
+/* line 115, ../scss/_home.scss */
 #featured h2 {
   border: none;
   padding-top: 20px;
 }
-/* line 77, ../scss/_home.scss */
+/* line 121, ../scss/_home.scss */
 #featured figure a {
   min-height: 180px;
 }
 @media (max-width: 381px) {
-  /* line 77, ../scss/_home.scss */
+  /* line 121, ../scss/_home.scss */
   #featured figure a {
     min-height: 200px;
   }
 }
-/* line 82, ../scss/_home.scss */
+/* line 126, ../scss/_home.scss */
 #featured .inscricoes {
   background: #b4ebed;
   width: 80%;
@@ -208,24 +293,43 @@ footer {
   font-size: 2em;
   color: #666;
   text-shadow: 0 1px 1px #fff;
+  transition: 1s;
 }
-/* line 94, ../scss/_home.scss */
+/* line 139, ../scss/_home.scss */
 #featured .inscricoes:hover, #featured .inscricoes:active {
   background: #f0a303;
+  color: black;
+  transition: 1s;
+}
+@media (min-width: 992px) {
+  /* line 126, ../scss/_home.scss */
+  #featured .inscricoes {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: -90px;
+    width: 300px;
+    position: relative;
+  }
 }
 
-/* line 101, ../scss/_home.scss */
+/* line 156, ../scss/_home.scss */
 .banner {
   min-height: 310px;
   position: relative;
 }
-/* line 105, ../scss/_home.scss */
+/* line 160, ../scss/_home.scss */
 .banner figcaption {
   color: #666;
   line-height: 1.5em;
   padding: 20px;
 }
-/* line 112, ../scss/_home.scss */
+@media (min-width: 992px) {
+  /* line 160, ../scss/_home.scss */
+  .banner figcaption {
+    color: white;
+  }
+}
+/* line 171, ../scss/_home.scss */
 .banner button {
   background: none;
   border: 0;
@@ -237,7 +341,7 @@ footer {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-/* line 124, ../scss/_home.scss */
+/* line 183, ../scss/_home.scss */
 .banner .pause,
 .banner .play {
   display: block;
@@ -245,26 +349,26 @@ footer {
   right: 15px;
   top: 15px;
 }
-/* line 132, ../scss/_home.scss */
+/* line 191, ../scss/_home.scss */
 .banner .pause {
   border-left: 10px solid #333;
   border-right: 10px solid #333;
   height: 30px;
   width: 30px;
 }
-/* line 139, ../scss/_home.scss */
+/* line 198, ../scss/_home.scss */
 .banner .play {
   border-left: 25px solid #333;
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
 }
 
-/* line 146, ../scss/_home.scss */
+/* line 205, ../scss/_home.scss */
 #home h2 {
   margin-bottom: 0;
 }
 
-/* line 150, ../scss/_home.scss */
+/* line 209, ../scss/_home.scss */
 .btn-traduzir {
   border: 0;
   background: none;
@@ -273,33 +377,102 @@ footer {
   margin-bottom: -20px;
   padding: 10px 15px;
 }
-/* line 158, ../scss/_home.scss */
+/* line 217, ../scss/_home.scss */
 .btn-traduzir:focus {
   outline-color: #b4ebed;
 }
 
-/* line 167, ../scss/_home.scss */
+@media (min-width: 992px) {
+  /* line 225, ../scss/_home.scss */
+  #the-movement h2,
+  #data h2,
+  #about-us h2 {
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+
+  /* line 239, ../scss/_home.scss */
+  #the-movement h3,
+  #data h3,
+  #about-us h3,
+  #contact h3 {
+    padding-left: 30px;
+  }
+  /* line 243, ../scss/_home.scss */
+  #the-movement ul,
+  #the-movement p,
+  #data ul,
+  #data p,
+  #about-us ul,
+  #about-us p,
+  #contact ul,
+  #contact p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  /* line 250, ../scss/_home.scss */
+  #about-us,
+  #the-movement {
+    background-color: white;
+    color: black;
+  }
+
+  /* line 256, ../scss/_home.scss */
+  #contact,
+  #data {
+    background-color: #202020;
+  }
+  /* line 260, ../scss/_home.scss */
+  #contact .btn-traduzir,
+  #data .btn-traduzir {
+    color: white;
+  }
+
+  /* line 265, ../scss/_home.scss */
+  #the-movement {
+    background-image: url(../img/upwit-movement.gif);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: 50%;
+    padding-top: 250px;
+    padding-bottom: 90px;
+  }
+
+  /* line 275, ../scss/_home.scss */
+  #data {
+    background-image: url(../img/upwit-data.gif);
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: 36%;
+    padding-top: 250px;
+    padding-bottom: 90px;
+  }
+}
+/* line 288, ../scss/_home.scss */
 #last-editions h2 {
   margin-bottom: 20px;
 }
-/* line 171, ../scss/_home.scss */
+/* line 292, ../scss/_home.scss */
 #last-editions h3 {
   padding: 0;
   text-align: center;
 }
-/* line 175, ../scss/_home.scss */
+/* line 296, ../scss/_home.scss */
 #last-editions h3 a {
   display: block;
   padding-bottom: 20px;
   text-decoration: none;
 }
-/* line 181, ../scss/_home.scss */
+/* line 302, ../scss/_home.scss */
 #last-editions h3 img {
   display: block;
   margin: 20px auto 0;
 }
 
-/* line 188, ../scss/_home.scss */
+/* line 309, ../scss/_home.scss */
 #contact {
   padding-bottom: 10px;
 }
