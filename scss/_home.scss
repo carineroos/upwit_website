@@ -49,6 +49,11 @@
 #featured {
 	height: calc(100% - 60px); //header height
 
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+	align-items: center;
+
 	a {
 		display: block
 	}
@@ -56,6 +61,12 @@
 	h2 {
 		border: none;
 		padding-top: 20px;
+	}
+
+
+	figure a {
+		min-height: 180px;
+		@media (max-width: 381px) { min-height: 200px; }
 	}
 
 	.inscricoes {
@@ -133,6 +144,10 @@
 	margin-left: auto;
 	margin-bottom: -20px;
 	padding: 10px 15px;
+
+	&:focus {
+    	outline-color: $brand-color;
+	}
 }
 
 
@@ -147,16 +162,22 @@
 		padding: 0;
 		text-align: center;
 
-		a { text-decoration: none;}
+		a {
+			display: block;
+			padding-bottom: 20px;
+			text-decoration: none;
+		}
 
 		img {
 			display: block;
-			margin: 20px auto;
+			margin: 20px auto 0;
 		}
 	}
 }
 
-
+#contact {
+	padding-bottom: 10px;
+}
 
 
 
